@@ -1,0 +1,231 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0 auto;
+    background-attachment: fixed;
+}
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    transition: 0.3s;
+    background-color: black;
+}
+
+#logo {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+#logo::after {
+    border: 1px solid black;
+    width: 100%;
+}
+#title {
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    font-size:2em;
+    transition: 0.3s;
+}
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30vw;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+#getStarted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10vw;
+}
+#getStarted h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4em;
+    margin-bottom: 15px;
+}
+#submit {
+    background-color: black;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 5%;
+    font-size: 1em;
+    color: white;
+    transition: 0.3s;
+}
+#submit:hover {
+    background-color: white;
+    color: black;
+}
+input {
+    padding: 5px;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 100px;
+}
+.desc {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100px;
+}
+.desc h2, p {
+    margin: 0;
+}
+#video {
+    display: flex;
+    justify-content: center;
+}
+iframe {
+    height: 25vw;
+    width: 30vw;
+    margin-top: 5%;
+    align-self: center;
+}
+#pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
+
+}
+#tenor, #bass, #valve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 3px;
+    width: 100%;
+    margin: 10px;
+}
+.name {
+    background: black;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+.info p {
+    padding: 5px;
+    font-size: 1.25em;
+}
+.btn {
+    background-color: black;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 15px;
+    border: none;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background-color: gray;
+}
+.changed-hover {
+    color: black;
+}
+.changed-hover:hover {
+    background-color: black;
+    color: white;
+}
+.original-hover {
+    color: white;
+}
+.original-hover:hover {
+    background-color: white;
+    color: black;
+}
+footer {
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+footer p {
+    padding: 0 10px 10px 0;
+    font-size: 1.25em;
+}
+#clickables {
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: center;
+
+}
+#clickables a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 1.25em;
+}
+@media screen and (max-width: 700px)
+{
+    header {
+        flex-direction: column;
+    }
+    #logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
+    #getStarted {
+        padding: 35vw 35vw 25vw 35vw;
+    }
+    .icon {
+        display: none;
+    }
+    .desc {
+        align-items: center;
+        text-align: center;
+    }
+    iframe {
+        height: 40vw;
+        width: 50vw;
+    }
+    #pricing {
+        flex-direction: column;
+    }
+
+}
